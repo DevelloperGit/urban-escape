@@ -1,0 +1,1 @@
+export { ContactCTA, type ContactCTAProps } from './ContactCTA'

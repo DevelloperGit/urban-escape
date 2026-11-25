@@ -1,0 +1,1 @@
+export { OpacityCrossfade } from './OpacityCrossfade'

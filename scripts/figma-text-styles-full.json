@@ -1,0 +1,353 @@
+[
+  {
+    "name": "Horizontal Divider",
+    "family": "Montserrat",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 15,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":-0.5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "unsplash:f7PF7yGqpEM",
+    "family": "Manrope",
+    "style": "Medium",
+    "weight": 500,
+    "size": 17,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Vector",
+    "family": "Manrope",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 17,
+    "lineHeight": "{\"value\":22,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-0.30000001192092896,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Gallery 1",
+    "family": "Manrope",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 17,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":-0.30000001192092896,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Button 2",
+    "family": "Manrope",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 17,
+    "lineHeight": "{\"value\":23,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-0.5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "photo.svg",
+    "family": "Montserrat",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 17,
+    "lineHeight": "{\"value\":22,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-0.30000001192092896,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Gallery 2",
+    "family": "Montserrat",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 17,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":-0.30000001192092896,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Gallery 3",
+    "family": "Montserrat",
+    "style": "Light",
+    "weight": 300,
+    "size": 17,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":-0.30000001192092896,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "ТРАДИЦИЙ И КАЧЕСТВО В СФЕРЕ БИЗНЕСА",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 20,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "OOO URBAN ESCAPE",
+    "family": "Montserrat",
+    "style": "ExtraLight",
+    "weight": 200,
+    "size": 20,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Mask group",
+    "family": "mixed",
+    "style": "mixed",
+    "weight": null,
+    "size": 20,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "РЕСТОРАН",
+    "family": "Montserrat",
+    "style": "Medium",
+    "weight": 500,
+    "size": 20,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Современный ритм диктует свои правила. Верните себе расслабление в близь природы, проводя время под открытым небом и чувствуя слияние с природой",
+    "family": "Manrope",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 22,
+    "lineHeight": "{\"value\":22,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-1,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "для тех, кто ценит современный комфорт и близость к природе",
+    "family": "Manrope",
+    "style": "Bold",
+    "weight": 700,
+    "size": 22,
+    "lineHeight": "{\"value\":22,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-0.5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Атмосфера тепла и заботы для зимнего отдыха",
+    "family": "Montserrat",
+    "style": "Bold",
+    "weight": 700,
+    "size": 22,
+    "lineHeight": "{\"value\":22,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-0.5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Переход 3",
+    "family": "Montserrat",
+    "style": "Medium Italic",
+    "weight": 500,
+    "size": 24,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Line 23",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 25,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Описание ",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 27,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Описание 2",
+    "family": "mixed",
+    "style": "mixed",
+    "weight": null,
+    "size": 27,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Alexey Dmitrievich — успешный предприниматель с многолетним опытом в сфере аренды недвижимости, специализирующийся на премиум загородных коттеджах. Он является основателем и руководителем компании, которая предлагает клиентам эксклюзивные решения для отдыха и проживания вдали от городской суеты.  С глубоким пониманием рынка элитной недвижимости, Alexey использует инновационные технологии для оптимизации процесса аренды, обеспечивая высокий уровень обслуживания и удовлетворение потребностей своих клиентов. Его философия бизнеса основана на принципах прозрачности, надежности и внимательности к каждому клиенту.  Alexey активно сотрудничает с архитекторами и дизайнерами, создавая уникальные и эстетически привлекательные объекты, которые отражают последние тенденции в мире загородной недвижимости. Его стремление к совершенству и внимание к деталям сделали его компанию одним из лидеров в своем сегменте.",
+    "family": "Montserrat",
+    "style": "Bold",
+    "weight": 700,
+    "size": 30,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Urban Escape",
+    "family": "Montserrat",
+    "style": "SemiBold",
+    "weight": 600,
+    "size": 32,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Vector",
+    "family": "Montserrat",
+    "style": "Italic",
+    "weight": 400,
+    "size": 36,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Group 6",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 36,
+    "lineHeight": "{\"value\":78,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Описание компаний",
+    "family": "mixed",
+    "style": "mixed",
+    "weight": null,
+    "size": 40,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "\\",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 40,
+    "lineHeight": "{\"value\":72.41014099121094,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Vector",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 40,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Карточка с каруселью",
+    "family": "Montserrat",
+    "style": "Medium Italic",
+    "weight": 500,
+    "size": 48,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Rectangle 8",
+    "family": "Montserrat",
+    "style": "Medium",
+    "weight": 500,
+    "size": 48,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "На горизонте замаячит новая эпоха, когда аренда станет не просто сделкой, а настоящим искусством. С помощью виртуальной реальности клиенты смогут «прогуляться» по коттеджам, выбрать именно тот, который станет их временным убежищем. А на местах – заботливый персонал, готовый выполнить любое желание, чтобы каждый гость почувствовал себя VIP-клиентом. С учетом растущего интереса к природе и устойчивому образу жизни, компании планируют развивать экотуризм, предлагая уникальные маршруты по местным достопримечательностям и активные мероприятия на свежем воздухе. Здоровый отдых в гармонии с природой станет более чем просто трендом — это будет философия их бизнеса. В центре внимание окажется персонализированный подход, который позволит каждому клиенту создать своё идеальное пространство. «Думайте о себе как о бесконечном источнике вдохновения», — именно так будут звучать девизы компаний. Они намерены открывать новые горизонты, сотрудничая с дизайнерами, художниками и местными мастерами, чтобы каждая аренда становилась не просто отдыхом, а настоящим опытом.",
+    "family": "Montserrat",
+    "style": "Medium Italic",
+    "weight": 500,
+    "size": 48,
+    "lineHeight": "{\"value\":74,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-6,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Line 30",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 48,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "image 4",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 50,
+    "lineHeight": "{\"value\":14,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Promo video 2",
+    "family": "Jura",
+    "style": "Regular",
+    "weight": 400,
+    "size": 64,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "Preview",
+    "family": "Montserrat",
+    "style": "ExtraLight Italic",
+    "weight": 200,
+    "size": 67,
+    "lineHeight": "{\"value\":78,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-5,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Line 1",
+    "family": "Montserrat Alternates",
+    "style": "Medium Italic",
+    "weight": 500,
+    "size": 88,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Line 13",
+    "family": "Cuprum",
+    "style": "Regular",
+    "weight": 400,
+    "size": 92,
+    "lineHeight": "{\"value\":74,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-6,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Promo-video",
+    "family": "Cuprum",
+    "style": "Italic",
+    "weight": 400,
+    "size": 96,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PERCENT\"}"
+  },
+  {
+    "name": "все права защищены",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 96,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Gallery",
+    "family": "Afacad",
+    "style": "Medium Italic",
+    "weight": 500,
+    "size": 110,
+    "lineHeight": "{\"value\":74,\"unit\":\"PIXELS\"}",
+    "letterSpacing": "{\"value\":-6,\"unit\":\"PIXELS\"}"
+  },
+  {
+    "name": "Welcome to the company",
+    "family": "Aboreto",
+    "style": "Regular",
+    "weight": 400,
+    "size": 150,
+    "lineHeight": "{\"unit\":\"AUTO\"}",
+    "letterSpacing": "{\"value\":0,\"unit\":\"PIXELS\"}"
+  }
+]

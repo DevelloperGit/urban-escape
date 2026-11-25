@@ -1,0 +1,1 @@
+export { TextOffer, type TextOfferProps } from './TextOffer'

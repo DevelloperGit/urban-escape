@@ -1,0 +1,1261 @@
+/**
+ * URBAN ESCAPE — глобальные дизайн-токены и базовые стили.
+ * Типографика синхронизирована с Figma (Frame 7 + текстовые слои макета, 1920px).
+ */
+
+@theme {
+  /* ——— Семейства (Figma Frame 7, 2061:21619) ——— */
+  --font-aboreto: 'Aboreto', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-montserrat: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-cuprum: 'Cuprum', ui-sans-serif, sans-serif;
+  --font-montserrat-alternates: 'Montserrat Alternates', var(--font-montserrat);
+  --font-manrope: 'Manrope', ui-sans-serif, sans-serif;
+  --font-jura: 'Jura', var(--font-montserrat);
+  --font-afacad: 'Afacad', var(--font-montserrat);
+  --font-cormorant: 'Cormorant Garamond', ui-serif, Georgia, 'Times New Roman', serif;
+
+  --font-display: var(--font-aboreto);
+  --font-body: var(--font-montserrat);
+  --font-ui: var(--font-manrope);
+  --font-quote: var(--font-montserrat-alternates);
+  --font-editorial: var(--font-cuprum);
+  --font-section: var(--font-jura);
+  --font-deco: var(--font-afacad);
+  --font-offer: var(--font-montserrat);
+  --font-serif: var(--font-display);
+  --default-font-family: var(--font-body);
+  --font-sans: var(--font-body);
+
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ——— Цвета текста ——— */
+  --color-text-primary: #ffffff;
+  --color-text-muted: rgb(255 255 255 / 0.72);
+  --color-text-subtle: rgb(255 255 255 / 0.5);
+
+  /* ——— Фоны и поверхности ——— */
+  --color-surface-black: #000000;
+  --color-surface-ink: #0a0a0a;
+  --color-surface-rock: #1a1512;
+
+  /* ——— Акценты и сцена (тон архитектуры на hero) ——— */
+  --color-accent: #ffffff;
+  --color-scene-sky: #7a8c99;
+  --color-scene-concrete: #a8a29e;
+  --color-scene-earth: #1a1512;
+
+  /* ——— Hero (Preview: Aboreto 150 / 48 / 40) ——— */
+  --text-hero: clamp(2.75rem, 7.8125vw, 9.375rem);
+  --text-hero--line-height: 1;
+  --text-hero--letter-spacing: 0;
+  --text-hero--font-weight: 400;
+
+  --text-hero-sub: clamp(1.125rem, 2.5vw, 3rem);
+  --text-hero-sub--line-height: 1;
+  --text-hero-sub--letter-spacing: 0;
+  --text-hero-sub--font-weight: 400;
+
+  /* ——— Текстовый оффер (Montserrat ExtraLight Italic 67 / lh 78 / ls -5px) ——— */
+  --text-offer: clamp(1.5rem, 3.489583vw, 4.1875rem);
+  --text-offer--line-height: 1.164179;
+  --text-offer--letter-spacing: -0.074627em;
+  --text-offer--font-weight: 200;
+  --text-offer--font-style: italic;
+
+  /* ——— Крупные display-акценты ——— */
+  --text-display-afacad: clamp(2.75rem, 5.729167vw, 6.875rem);
+  --text-display-afacad--line-height: 0.672727;
+  --text-display-afacad--letter-spacing: -0.054545em;
+  --text-display-afacad--font-weight: 500;
+  --text-display-afacad--font-style: italic;
+
+  --text-display-cuprum: clamp(2.5rem, 4.791667vw, 5.75rem);
+  --text-display-cuprum--line-height: 0.804348;
+  --text-display-cuprum--letter-spacing: -0.065217em;
+  --text-display-cuprum--font-weight: 400;
+
+  --text-quote-lg: clamp(2.25rem, 4.583333vw, 5.5rem);
+  --text-quote-lg--line-height: 1;
+  --text-quote-lg--letter-spacing: 0;
+  --text-quote-lg--font-weight: 500;
+  --text-quote-lg--font-style: italic;
+
+  /* Оффер локаций — Montserrat Alternates (Figma 2060:10887–10888) */
+  --text-offer-alternates: clamp(2.25rem, 4.583333vw, 5.5rem);
+  --text-offer-alternates--line-height: 1;
+  --text-offer-alternates--letter-spacing: 0;
+  --text-offer-alternates--font-weight: 500;
+  --text-offer-alternates--font-style: italic;
+
+  --text-section-title: clamp(2rem, 3.333333vw, 4rem);
+  --text-section-title--line-height: 1;
+  --text-section-title--letter-spacing: 0;
+  --text-section-title--font-weight: 400;
+
+  /* ——— Заголовки h1–h6 (ключевые размеры из макета) ——— */
+  --text-heading-1: clamp(2.5rem, 4.791667vw, 5.75rem);
+  --text-heading-1--line-height: 0.804348;
+  --text-heading-1--letter-spacing: -0.065217em;
+  --text-heading-1--font-weight: 400;
+
+  --text-heading-2: clamp(2.25rem, 4.583333vw, 5.5rem);
+  --text-heading-2--line-height: 1;
+  --text-heading-2--letter-spacing: 0;
+  --text-heading-2--font-weight: 500;
+
+  --text-heading-3: clamp(2rem, 3.333333vw, 4rem);
+  --text-heading-3--line-height: 1;
+  --text-heading-3--letter-spacing: 0;
+  --text-heading-3--font-weight: 400;
+
+  --text-heading-4: clamp(1.125rem, 2.5vw, 3rem);
+  --text-heading-4--line-height: 1;
+  --text-heading-4--letter-spacing: 0;
+  --text-heading-4--font-weight: 400;
+
+  --text-heading-5: clamp(1.25rem, 1.666667vw, 2rem);
+  --text-heading-5--line-height: 1;
+  --text-heading-5--letter-spacing: 0;
+  --text-heading-5--font-weight: 600;
+
+  --text-heading-6: clamp(0.9375rem, 1.145833vw, 1.375rem);
+  --text-heading-6--line-height: 1;
+  --text-heading-6--letter-spacing: -0.045455em;
+  --text-heading-6--font-weight: 600;
+
+  /* ——— UI и body ——— */
+  --text-body-lg: clamp(1rem, 1.25vw, 1.5rem);
+  --text-body-lg--line-height: 1;
+  --text-body-lg--letter-spacing: 0;
+  --text-body-lg--font-weight: 500;
+
+  --text-body: clamp(0.9375rem, 0.885417vw, 1.0625rem);
+  --text-body--line-height: 1.294118;
+  --text-body--letter-spacing: -0.029412em;
+  --text-body--font-weight: 600;
+
+  --text-body-sm: clamp(0.8125rem, 0.78125vw, 0.9375rem);
+  --text-body-sm--line-height: 1;
+  --text-body-sm--letter-spacing: -0.045455em;
+  --text-body-sm--font-weight: 600;
+
+  --text-caption: clamp(0.875rem, 1.041667vw, 1.25rem);
+  --text-caption--line-height: 1;
+  --text-caption--letter-spacing: 0;
+  --text-caption--font-weight: 200;
+
+  --text-label: clamp(1rem, 2.083333vw, 2.5rem);
+  --text-label--line-height: 1;
+  --text-label--letter-spacing: 0;
+  --text-label--font-weight: 400;
+
+  --text-button: clamp(0.9375rem, 0.885417vw, 1.0625rem);
+  --text-button--line-height: 1.294118;
+  --text-button--letter-spacing: -0.017647em;
+  --text-button--font-weight: 600;
+
+  --text-eyebrow: clamp(0.9375rem, 1.145833vw, 1.375rem);
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: -0.045455em;
+  --text-eyebrow--font-weight: 700;
+
+  /* ——— tracking (Figma: преимущественно 0 и отрицательные px в em) ——— */
+  --tracking-hero: 0;
+  --tracking-caps: 0;
+  --tracking-wide: 0;
+  --tracking-ui: -0.03em;
+
+  /* ——— Скругления ——— */
+  --radius-sharp: 0px;
+  --radius-subtle: 2px;
+  --radius-sm: 2px;
+  --radius-DEFAULT: 0px;
+  --radius: 0px;
+
+  /* ——— Отступы секций ——— */
+  --spacing-section-y: clamp(4rem, 10vw, 7.5rem);
+  --spacing-gutter: clamp(1.25rem, 4vw, 3.75rem);
+  --spacing-hero-title-to-line: clamp(0.5rem, 1.6vw, 0.8125rem);
+  --spacing-hero-line-to-sub: clamp(0.625rem, 0.78125vw, 0.9375rem);
+  --spacing-hero-footer-arrow: clamp(3.25rem, 5.73vw, 6.875rem);
+  --spacing-hero-footer-lang: clamp(2rem, 3.072916vw, 3.6875rem);
+  --spacing-hero-lang-inline: clamp(1.25rem, 4.427083vw, 5.3125rem);
+  --spacing-offer-y: clamp(1.75rem, 2.083333vw, 2.5rem);
+  --spacing-offer-min-h: clamp(11.25rem, 12.291667vw, 14.75rem);
+  --spacing-offer-max-w: min(66.40625rem, 92vw);
+
+  /* ——— Текстовый оффер Cuprum (Figma 2060:10871, Italic 96 / frame padding 79×135) ——— */
+  --text-offer-cuprum: clamp(1.75rem, 5vw, 6rem);
+  --text-offer-cuprum--line-height: 1.15625;
+  --text-offer-cuprum--letter-spacing: 0;
+  --text-offer-cuprum--font-weight: 400;
+  --text-offer-cuprum--font-style: italic;
+  --spacing-offer-cuprum-y: clamp(1.75rem, 4.114583vw, 4.9375rem);
+  --spacing-offer-cuprum-x: clamp(1.25rem, 7.03125vw, 8.4375rem);
+  --spacing-offer-max-w-cuprum: min(103.0625rem, calc(100% - 2 * var(--spacing-offer-cuprum-x)));
+
+  /* ——— Текстовый оффер Jura (Figma 2060:11057–11058, 64 / padding 40×30) ——— */
+  --text-offer-jura: clamp(2rem, 3.333333vw, 4rem);
+  --text-offer-jura--line-height: 1.1875;
+  --text-offer-jura--letter-spacing: 0;
+  --text-offer-jura--font-weight: 400;
+  --text-offer-jura--font-style: normal;
+  --spacing-offer-jura-y: clamp(1.75rem, 2.083333vw, 2.5rem);
+  --spacing-offer-jura-x: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --spacing-offer-max-w-jura: min(116.1875rem, calc(100% - 2 * var(--spacing-offer-jura-x)));
+  --spacing-offer-jura-min-h: clamp(8.5rem, 12.083333vw, 14.5rem);
+
+  /* ——— Оффер локаций (Figma 2060:10884, max 1470, inset 225) ——— */
+  --spacing-offer-alternates-spacer-top: clamp(3rem, 6.09375vw, 7.3125rem);
+  --spacing-offer-alternates-spacer-bottom: clamp(1.75rem, 3.541667vw, 4.25rem);
+  --spacing-offer-alternates-text-pt: clamp(0.5625rem, 0.578125vw, 0.695rem);
+  --spacing-offer-alternates-text-pb: clamp(0.625rem, 0.625vw, 0.75rem);
+  --spacing-offer-alternates-line-to-divider: clamp(0.125rem, 0.260417vw, 0.3125rem);
+  --spacing-offer-alternates-divider-to-line: clamp(0.25rem, 0.3125vw, 0.375rem);
+  --spacing-offer-alternates-x: clamp(1.5rem, 11.71875vw, 14.0625rem);
+  --spacing-offer-max-w-alternates: min(91.875rem, calc(100% - 2 * var(--spacing-offer-alternates-x)));
+
+  /* ——— Текстовый оффер 4 (Figma 2060:11067–11074, 1920×320) ——— */
+  --text-offer-4-title: clamp(2.5rem, 4.791667vw, 5.75rem);
+  --text-offer-4-title--line-height: 0.804348;
+  --text-offer-4-title--letter-spacing: -0.065217em;
+  --text-offer-4-title--font-weight: 400;
+  --text-offer-4-title--font-style: normal;
+  --text-offer-4-sub: clamp(1.125rem, 2.5vw, 3rem);
+  --text-offer-4-sub--line-height: 1;
+  --text-offer-4-sub--letter-spacing: 0;
+  --text-offer-4-sub--font-weight: 500;
+  --text-offer-4-sub--font-style: italic;
+  --spacing-offer-4-text-block-min-h: clamp(8rem, 12.760417vw, 15.3125rem);
+  --spacing-offer-4-title-pt: clamp(2.5rem, 4.86875vw, 5.8425rem);
+  --spacing-offer-4-title-line-gap: 0px;
+  --spacing-offer-4-line-offset-y: clamp(1rem, 1.25vw, 1.5rem);
+  --spacing-offer-4-line-pull-left: clamp(0.25rem, 0.416667vw, 0.5rem);
+  --size-offer-4-line-min-w: clamp(3rem, 10.208333vw, 12.25rem);
+  --spacing-offer-4-sub-section-py: clamp(0.375rem, 0.416667vw, 0.5rem);
+  --spacing-offer-4-sub-inset-x: clamp(1.25rem, 26.354167vw, 31.625rem);
+  --spacing-offer-max-w-4-sub: min(56.75rem, 100%);
+
+  /* ——— Feature cards (Figma Карточка 1–2, 1920px) ——— */
+  --spacing-feature-y: clamp(2.5rem, 3.46vw, 4.125rem);
+  --spacing-feature-stack-gap: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --spacing-feature-inset-x: clamp(1.125rem, 2.395833vw, 2.875rem);
+  --spacing-feature-text-pt: clamp(1.75rem, 2.291667vw, 2.75rem);
+  --spacing-feature-text-pl: clamp(1.125rem, 1.5625vw, 1.875rem);
+  --spacing-feature-text-pl-reversed: clamp(1.5rem, 8.802083vw, 10.5625rem);
+  --spacing-feature-title-to-divider: clamp(0.5rem, 0.625vw, 0.75rem);
+  --spacing-feature-divider-to-body: clamp(1.125rem, 1.197917vw, 1.4375rem);
+  --spacing-feature-arrow-inline: clamp(0.5rem, 0.572917vw, 0.6875rem);
+  --spacing-feature-arrow-inline-reversed: clamp(2.25rem, 3.78125vw, 4.5625rem);
+  --spacing-feature-arrow-bottom: clamp(0.75rem, 0.78125vw, 0.9375rem);
+  --size-feature-arrow: clamp(2.25rem, 2.1875vw, 2.625rem);
+  /* Text block (Figma 2060:21614) */
+  --size-feature-text-w: clamp(13.5rem, 20.572917vw, 24.6875rem);
+  --size-feature-text-w-wide: clamp(14.5rem, 23.229167vw, 27.875rem);
+  --size-feature-divider-w: clamp(14.5rem, 22.395833vw, 26.875rem);
+  --size-feature-divider-w-wide: clamp(14.75rem, 22.5vw, 27rem);
+  --size-feature-decor-w: min(100%, clamp(17.5rem, 32.03125vw, 38.4375rem));
+  --size-feature-photo-w: min(100%, clamp(18rem, 45.104167vw, 54.125rem));
+  --size-feature-media-h: clamp(14rem, 20.520833vw, 24.625rem);
+  --size-feature-overlap: clamp(2.5rem, 6.979167vw, 8.375rem);
+  --size-feature-overlap-reversed: clamp(2.75rem, 7.916667vw, 9.5rem);
+  --radius-feature-photo: clamp(1rem, 1.822917vw, 2.1875rem);
+  --radius-feature-decor: clamp(0.75rem, 1.041667vw, 1.25rem);
+  --text-feature-eyebrow: clamp(1rem, 1.145833vw, 1.375rem);
+  --text-feature-eyebrow--line-height: 1;
+  --text-feature-eyebrow--letter-spacing: -0.045454em;
+  --text-feature-eyebrow--font-weight: 600;
+  --text-feature-body-lg: clamp(0.9375rem, 0.885417vw, 1.0625rem);
+  --text-feature-body-lg--line-height: 1.352941;
+  --text-feature-body-lg--letter-spacing: 0;
+  --text-feature-body-lg--font-weight: 500;
+  --text-feature-body-sm: clamp(0.8125rem, 0.78125vw, 0.9375rem);
+  --text-feature-body-sm--line-height: 1.4;
+  --text-feature-body-sm--letter-spacing: -0.033333em;
+  --text-feature-body-sm--font-weight: 600;
+
+  /* ——— Promo video (Figma 2060:10872 Promo-video, 1920px) ——— */
+  --spacing-video-spacer-h: clamp(2rem, 3.697917vw, 4.4375rem);
+  --spacing-video-inset-x: clamp(1.25rem, 2.604167vw, 3.125rem);
+  --spacing-video-inset-y: clamp(0.5rem, 0.520833vw, 0.625rem);
+  --size-video-media-h: clamp(12rem, 38.020833vw, 45.625rem);
+  --radius-video-media: clamp(1rem, 2.083333vw, 2.5rem);
+  --size-video-play: clamp(5rem, 12.5vw, 15rem);
+  --video-preview-blur: 2px;
+  --color-video-preview-dim: rgb(0 0 0 / 0.08);
+
+  /* ——— Video modal (promo playback) ——— */
+  --z-index-video-modal: 200;
+  --z-index-back-to-hero: 120;
+  --size-back-to-hero: clamp(3rem, 3.645833vw, 4.375rem);
+  --size-back-to-hero-icon-w: clamp(1.125rem, 1.354167vw, 1.625rem);
+  --size-back-to-hero-icon-h: clamp(1.5rem, 1.875vw, 2.25rem);
+  --spacing-back-to-hero-inset-x: clamp(1rem, 2.083333vw, 2.5rem);
+  --spacing-back-to-hero-inset-y: clamp(1rem, 2.083333vw, 2.5rem);
+  --shadow-back-to-hero: 0 0.5rem 1.5rem rgb(0 0 0 / 0.35);
+  --color-video-modal-backdrop: rgb(0 0 0 / 0.82);
+  --spacing-video-modal-inset: clamp(0.75rem, 1.5625vw, 1.875rem);
+  --spacing-video-modal-close-inset: clamp(0.75rem, 1.041667vw, 1.25rem);
+  --size-video-modal-max-w: min(112rem, calc(100vw - 2 * var(--spacing-video-modal-inset)));
+  --size-video-modal-max-h: min(90vh, 68.75rem);
+  --radius-video-modal: clamp(0.875rem, 1.041667vw, 1.25rem);
+  --size-video-modal-close: clamp(2.5rem, 3.125vw, 3.75rem);
+  --size-video-modal-close-icon: clamp(1.125rem, 1.25vw, 1.5rem);
+  --shadow-video-modal: 0 1.5rem 4rem rgb(0 0 0 / 0.45);
+
+  /* Promo video 2 (Figma 2060:11059, full-bleed 1920×621, play ~237×240) */
+  --spacing-video2-spacer-h: clamp(2rem, 3.75vw, 4.5rem);
+  --size-video2-media-h: clamp(11rem, 32.34375vw, 38.8125rem);
+  --radius-video2-media: 0;
+  --ue-video2-bg-position: center 58%;
+
+  /* ——— Property card / Дом 1–4 (Figma 2060:10890, масштаб от container max 120rem) ——— */
+  --size-property-container-max: 120rem;
+  --spacing-property-y: clamp(0.25rem, 0.364583vw, 0.4375rem);
+  --spacing-property-inset-x: clamp(1.25rem, 2.604167vw, 3.125rem);
+  --spacing-property-stack-gap: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --size-property-card-h: clamp(22rem, 32.291667cqw, 38.75rem);
+  --size-property-main-w: min(100%, clamp(17.5rem, 46.354167cqw, 55.625rem));
+  --size-property-main-h: clamp(14rem, 31.25cqw, 37.5rem);
+  --radius-property-main: clamp(0.875rem, 1.041667cqw, 1.25rem);
+  --radius-property-thumb: clamp(0.75rem, 0.78125cqw, 0.9375rem);
+  --radius-property-cta: 9999px;
+  --spacing-property-main-left: clamp(1.25rem, 2.604167cqw, 3.125rem);
+  --spacing-property-main-top: clamp(0.375rem, 0.520833cqw, 0.625rem);
+  --spacing-property-text-gap: clamp(0.75rem, 2.03125cqw, 2.4375rem);
+  --spacing-property-text-left: calc(
+    var(--spacing-property-main-left) + var(--size-property-main-w) +
+      var(--spacing-property-text-gap)
+  );
+  --size-property-gallery-overlap: clamp(1.5rem, 3.854167cqw, 4.625rem);
+  --spacing-property-gallery-left: calc(
+    var(--spacing-property-main-left) + var(--size-property-main-w) -
+      var(--size-property-gallery-overlap)
+  );
+  --spacing-property-gallery-right: clamp(1.25rem, 2.604167cqw, 3.125rem);
+  --spacing-property-gallery-bottom: clamp(0.75rem, 1.302083cqw, 1.5625rem);
+  --spacing-property-nav-arrow-photo-inset: clamp(1rem, 1.354167cqw, 1.625rem);
+  --size-property-nav-arrow: clamp(2.5rem, 2.34375cqw, 2.8125rem);
+  --spacing-property-text-pt: clamp(0.5rem, 0.989583cqw, 1.1875rem);
+  --size-property-text-max-w: min(23.875rem, 100%);
+  --size-property-divider-w: min(24.0625rem, 100%);
+  --spacing-property-title-to-divider: clamp(0.375rem, 0.46875vw, 0.5625rem);
+  --spacing-property-divider-to-body: clamp(0.2rem, 0.260417vw, 0.3125rem);
+  --spacing-property-body-to-capacity: clamp(0.5rem, 0.625vw, 0.75rem);
+  --spacing-property-capacity-gap: clamp(0.5rem, 0.625vw, 0.75rem);
+  --spacing-property-capacity-to-cta: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --spacing-property-cta-gap: clamp(0.75rem, 1.145833vw, 1.375rem);
+  --size-property-cta-h: clamp(3rem, 3.645833vw, 4.375rem);
+  --size-property-cta-min-w: clamp(9rem, 10.208333vw, 12.25rem);
+  --size-property-cta-arrow: clamp(3rem, 3.645833vw, 4.375rem);
+  --size-property-thumb-w: clamp(4.5rem, 12.5cqw, 15rem);
+  --size-property-thumb-h: clamp(4.625rem, 12.760417cqw, 15.3125rem);
+  --spacing-property-thumb-gap: clamp(0.5rem, 0.78125cqw, 0.9375rem);
+  --spacing-property-gallery-pt: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --text-property-title: clamp(1.125rem, 1.145833vw, 1.375rem);
+  --text-property-title--line-height: 1;
+  --text-property-title--letter-spacing: -0.022727em;
+  --text-property-title--font-weight: 700;
+  --text-property-body: clamp(0.9375rem, 0.885417vw, 1.0625rem);
+  --text-property-body--line-height: 1.294118;
+  --text-property-body--letter-spacing: -0.017647em;
+  --text-property-body--font-weight: 600;
+  --text-property-capacity: var(--text-property-body);
+  --text-property-capacity--line-height: var(--text-property-body--line-height);
+  --text-property-capacity--letter-spacing: var(--text-property-body--letter-spacing);
+  --text-property-capacity--font-weight: 600;
+  --text-property-cta: var(--text-property-body);
+  --text-property-cta--line-height: 1.352941;
+  --text-property-cta--letter-spacing: -0.029412em;
+  --text-property-cta--font-weight: 600;
+  --size-property-capacity-icon: clamp(0.875rem, 0.833333vw, 1rem);
+
+  /* Переход «Подробнее» после карточек объектов (Figma 2060:11053) */
+  --spacing-details-section-y: clamp(1.125rem, 1.145833vw, 1.375rem);
+  --size-details-section-min-h: clamp(5.5rem, 6.25vw, 7.5rem);
+  --size-details-button-h: clamp(3.25rem, 3.958333vw, 4.75rem);
+  --size-details-button-min-w: min(100%, clamp(15rem, 20.572917vw, 24.6875rem));
+  --radius-details-button: clamp(2.5rem, 3.645833vw, 4.375rem);
+  --size-details-button-border: 2px;
+  --spacing-details-button-px: clamp(2rem, 3.4375vw, 3.5rem);
+  --spacing-details-button-gap: clamp(1rem, 1.145833vw, 1.375rem);
+  --text-details-button: clamp(1.375rem, 1.875vw, 2.25rem);
+  --text-details-button--line-height: 1;
+  --text-details-button--letter-spacing: 0;
+  --text-details-button--font-weight: 400;
+  --text-details-button--font-style: italic;
+  --size-details-plus-icon: clamp(1.375rem, 1.692708vw, 2.03125rem);
+  --size-details-plus-stroke: 1.5px;
+  --ue-details-button-blur: 6rem;
+
+  /* ——— Photo Gallery / Карточка с каруселью (Figma 2060:11075, 1920px) ——— */
+  --spacing-gallery-pt: clamp(2rem, 2.96875vw, 3.5625rem);
+  --spacing-gallery-pb: clamp(2rem, 2.96875vw, 3.5625rem);
+  --spacing-gallery-inset-x: clamp(1.25rem, 4.479167vw, 5.375rem);
+  --gap-gallery-top-row: clamp(1rem, 12.34375vw, 14.8125rem);
+  --spacing-gallery-top-to-carousel: clamp(2rem, 3.958333vw, 4.75rem);
+  --radius-gallery-card: clamp(1.5rem, 2.083333vw, 2.5rem);
+  --size-gallery-card-w: min(100%, clamp(16rem, 22.083333vw, 26.5rem));
+  --size-gallery-card-h: clamp(18rem, 29.0625vw, 34.875rem);
+  --size-gallery-container-max: 120rem;
+  --size-gallery-viewport-max-w: min(100%, clamp(18rem, 74.375vw, 89.25rem));
+  --size-gallery-slide-active-w: clamp(14rem, 41.666667vw, 50rem);
+  --size-gallery-slide-adjacent-w: clamp(11rem, 33.333333vw, 40rem);
+  --size-gallery-slide-outer-w: clamp(8rem, 25vw, 30rem);
+  --size-gallery-slide-active-h: clamp(7rem, 20.833333vw, 25rem);
+  --size-gallery-slide-adjacent-h: clamp(5.5rem, 16.666667vw, 20rem);
+  --size-gallery-slide-outer-h: clamp(4rem, 12.5vw, 15rem);
+  --gap-gallery-slides: clamp(0.5rem, 1.25vw, 1.5rem);
+  --spacing-gallery-carousel-px: clamp(0.75rem, 3.333333vw, 4rem);
+  --spacing-gallery-carousel-nav-gap: clamp(1rem, 1.25vw, 1.5rem);
+  --spacing-gallery-nav-gap: 0.5rem;
+  --gap-gallery-dots: 0.625rem;
+  --size-gallery-dot-active: 1rem;
+  --size-gallery-dot: 0.75rem;
+  --color-gallery-dot-active: #ffffff;
+  --color-gallery-dot: #999999;
+  --size-gallery-nav-arrow: 1.5rem;
+  --size-gallery-nav-hit: 2.5rem;
+  --text-gallery-label: var(--text-display-afacad);
+  --text-gallery-label--line-height: var(--text-display-afacad--line-height);
+  --text-gallery-label--letter-spacing: var(--text-display-afacad--letter-spacing);
+  --text-gallery-label--font-weight: var(--text-display-afacad--font-weight);
+  --text-gallery-label--font-style: var(--text-display-afacad--font-style);
+  --size-gallery-label-stroke: clamp(2px, 0.15625vw, 3px);
+
+  /* ——— Баннер (Figma 2060:11085, 1920px) ——— */
+  --spacing-banner-section-y: clamp(1.5rem, 2.03125vw, 2.4375rem);
+  --spacing-banner-section-x: clamp(1.25rem, 2.5vw, 3rem);
+  --size-banner-card-min-h: clamp(18rem, 21.458333vw, 25.75rem);
+  --radius-banner-card: clamp(2rem, 3.645833vw, 4.375rem);
+  --spacing-banner-card-pt: clamp(1.75rem, 2.1875vw, 2.625rem);
+  --spacing-banner-card-pb: clamp(1.25rem, 1.40625vw, 1.6875rem);
+  --spacing-banner-card-x: clamp(1rem, 4vw, 3rem);
+  --spacing-banner-content-gap: clamp(1rem, 1.614583vw, 1.9375rem);
+  --spacing-banner-message-to-button: clamp(1.5rem, 2.916667vw, 3.5rem);
+  --size-banner-message-max-w: min(100%, clamp(16rem, 71.302083vw, 85.5625rem));
+  --text-banner-title: clamp(1.5rem, 1.875vw, 2.25rem);
+  --text-banner-title--line-height: 2.166667;
+  --text-banner-title--letter-spacing: -0.138889em;
+  --text-banner-title--font-weight: 400;
+  --text-banner-message: clamp(1.5rem, 2.5vw, 3rem);
+  --text-banner-message--line-height: 1.25;
+  --text-banner-message--letter-spacing: 0;
+  --text-banner-message--font-weight: 500;
+  --size-banner-button-h: clamp(3rem, 3.59375vw, 4.3125rem);
+  --size-banner-button-min-w: min(100%, clamp(12rem, 18.59375vw, 22.3125rem));
+  --radius-banner-button: clamp(2rem, 2.083333vw, 2.5rem);
+  --size-banner-button-border: 1px;
+  --spacing-banner-button-px: clamp(2rem, 4.375vw, 5.25rem);
+  --text-banner-button: clamp(1.25rem, 1.666667vw, 2rem);
+  --text-banner-button--line-height: 1;
+  --text-banner-button--letter-spacing: 0;
+  --text-banner-button--font-weight: 600;
+  --ue-banner-overlay-bg: rgb(217 217 217 / 0.1);
+  --ue-banner-overlay-blur: 2px;
+  --ue-banner-inner-shadow: inset 0 0 20px 19px rgb(0 0 0 / 0.6);
+
+  /* ——— Текстовый оффер 5 (Figma 2060:11093, 1920px) ——— */
+  --spacing-offer-5-top-spacer: clamp(2rem, 2.916667vw, 3.5rem);
+  --size-offer-5-transition-h: clamp(5rem, 6.25vw, 7.5rem);
+  --text-offer-5: var(--text-label);
+  --text-offer-5--line-height: 1;
+  --text-offer-5--letter-spacing: 0;
+  --text-offer-5-company--font-weight: var(--font-weight-semibold);
+  --text-offer-5-brand--font-weight: 400;
+  --spacing-offer-5-inset-x: clamp(1.25rem, 2.5vw, 3rem);
+  --spacing-offer-5-content-lift: clamp(0.5rem, 0.833333vw, 1rem);
+  --spacing-offer-5-line-offset-y: calc(
+    clamp(0.5rem, 0.625vw, 0.75rem) + 1px
+  );
+  --spacing-offer-5-line-shift-x: clamp(-0.25rem, -0.3125vw, -0.375rem);
+
+  /* ——— Описание владельца (Figma 2060:13071 «Описание », 1920×1070) ——— */
+  --size-owner-transition-h: clamp(2.5rem, 3.645833vw, 4.375rem);
+  --size-owner-section-min-h: clamp(28rem, 52.083333vw, 62.5rem);
+  --spacing-owner-pl: clamp(1.25rem, 5.3125vw, 6.375rem);
+  --spacing-owner-pr: clamp(1.25rem, 7.34375vw, 8.8125rem);
+  --spacing-owner-pb: clamp(1.75rem, 3.645833vw, 4.375rem);
+  --spacing-owner-content-pt: clamp(1rem, 1.71875vw, 2.0625rem);
+  --spacing-owner-text-offset: 0px;
+  --spacing-owner-poster-offset: clamp(0.75rem, 1.875vw, 2.25rem);
+  --spacing-owner-columns-gap: clamp(1.25rem, 4.010417vw, 4.8125rem);
+  --spacing-owner-stack-gap: clamp(1.5rem, 2.5vw, 2rem);
+  --spacing-owner-title-to-divider: clamp(0.25rem, 0.46875vw, 0.5625rem);
+  --spacing-owner-divider-to-body: clamp(1rem, 1.5625vw, 1.875rem);
+  --size-owner-divider-w: min(100%, var(--size-owner-body-max));
+  --size-owner-title-max: 45rem;
+  --size-owner-body-max: 57.5625rem;
+  --size-owner-poster-max: 42.45rem;
+  --size-owner-poster-ratio: 679 / 862;
+  --radius-owner-poster: clamp(1.5rem, 2.604167vw, 3.125rem);
+  --text-owner-title: clamp(1.125rem, 1.5625vw, 1.875rem);
+  --text-owner-title--line-height: 1.233333;
+  --text-owner-title--letter-spacing: 0;
+  --text-owner-title--font-weight: 700;
+  --text-owner-body: clamp(1rem, 1.40625vw, 1.6875rem);
+  --text-owner-body--line-height: 1.394815;
+  --text-owner-body--letter-spacing: 0;
+  --text-owner-body--font-weight: 400;
+
+  /* ——— О компании (Figma 7:647 «Описание компаний», 1920×651) ——— */
+  --spacing-about-pl: clamp(1.25rem, 2.65625vw, 3.1875rem);
+  --spacing-about-pr: clamp(1.25rem, 7.916667vw, 9.5rem);
+  --spacing-about-py: clamp(1.75rem, 3.645833vw, 4.375rem);
+  --spacing-about-photo-to-text: clamp(1.25rem, 3.697917vw, 4.4375rem);
+  --spacing-about-stack-gap: clamp(1.25rem, 2.5vw, 2rem);
+  --spacing-about-title-offset: clamp(0.5rem, 0.885417vw, 1.0625rem);
+  --spacing-about-title-to-body: 0.625rem;
+  --spacing-about-title-line-gap: 0px;
+  --spacing-about-title-line-pull-left: 12px;
+  --spacing-about-title-line-pull-right: clamp(0.1875rem, 0.35vw, 0.25rem);
+  --size-about-title-line: 1px;
+  --size-about-title-line-w: clamp(4rem, 9.5vw, 12rem);
+  --spacing-about-title-line-drop: clamp(0.4rem, 0.73vw, 0.875rem);
+  --size-about-photo-ratio: 912 / 512;
+  --ue-about-photo-position: center 32%;
+  --radius-about-photo: clamp(1.5rem, 3.645833vw, 4.375rem);
+  --size-about-text-max: 45.875rem;
+  --text-about-title: clamp(1.5rem, 2.083333vw, 2.5rem);
+  --text-about-title--line-height: 1.810254;
+  --text-about-title--letter-spacing: -0.06px;
+  --text-about-title--font-weight: 400;
+  --text-about-body: clamp(1rem, 1.40625vw, 1.6875rem);
+  --text-about-body--line-height: 1.162;
+  --text-about-body--letter-spacing: 0;
+  --text-about-body--font-weight: 400;
+
+  /* ——— Описание 2 (Figma 2060:17128 «Описание 2», 1920×1057) ——— */
+  --size-desc2-transition-h: clamp(3rem, 6.25vw, 7.5rem);
+  --spacing-desc2-px: clamp(1.25rem, 5.15625vw, 6.1875rem);
+  --spacing-desc2-pt: clamp(1.5rem, 2.96875vw, 3.5625rem);
+  --spacing-desc2-pb: clamp(1.75rem, 3.645833vw, 4.375rem);
+  --spacing-desc2-collage-to-title: clamp(1rem, 1.25vw, 1.5rem);
+  --spacing-desc2-title-to-divider: clamp(0.25rem, 0.46875vw, 0.5625rem);
+  --spacing-desc2-divider-to-body: clamp(1rem, 1.302083vw, 1.5625rem);
+  --size-desc2-collage-max: 107.9375rem;
+  --size-desc2-collage-ratio: 1727 / 402;
+  --radius-desc2-collage: clamp(1.5rem, 2.604167vw, 3.125rem);
+  --size-desc2-title-max: 30.8125rem;
+  --size-desc2-body-max: 106.9375rem;
+  --text-desc2-title: clamp(1.5rem, 2.5vw, 3rem);
+  --text-desc2-title--line-height: 1.541667;
+  --text-desc2-title--letter-spacing: -0.125rem;
+  --text-desc2-title--font-weight: 500;
+  --text-desc2-body: clamp(0.875rem, 1.25vw, 1.5rem);
+  --text-desc2-body--line-height: 1.35;
+  --text-desc2-body--letter-spacing: 0;
+  --text-desc2-body--font-weight: 500;
+
+  /* ——— Футер (Figma 2060:19544, 1920×520) ——— */
+  --size-footer-transition-h: clamp(2.5rem, 3.645833vw, 4.375rem);
+  --size-footer-main-min-h: clamp(20rem, 23.4375vw, 28.125rem);
+  --spacing-footer-inset-x: clamp(1.25rem, 1.5625vw, 1.875rem);
+  --spacing-footer-title-pt: clamp(0.75rem, 0.9375vw, 1.125rem);
+  --spacing-footer-title-to-rule: clamp(0.5rem, 1.666667vw, 2rem);
+  --spacing-footer-rule-to-nav: clamp(0.75rem, 1.302083vw, 1.5625rem);
+  --spacing-footer-nav-gap: clamp(1.125rem, 2.291667vw, 2.75rem);
+  --spacing-footer-nav-to-legal: clamp(1rem, 5.208333vw, 6.25rem);
+  --spacing-footer-legal-py: clamp(0.875rem, 1.302083vw, 1.5625rem);
+  --spacing-footer-legal-gap: clamp(1rem, 2.5vw, 3rem);
+  --size-footer-title-rule-w: min(100%, clamp(10rem, 33.541667vw, 40.25rem));
+  /* ниже и ближе к Aboreto 96px, чем оффер 5 */
+  --spacing-footer-title-line-offset-y: calc(
+    var(--spacing-offer-5-line-offset-y) + clamp(0.375rem, 1.041667vw, 1.25rem)
+  );
+  --spacing-footer-title-line-shift-x: clamp(-0.5625rem, -1.041667vw, -1.25rem);
+  --spacing-footer-title-line-shift-x-left: clamp(-0.0625rem, -0.208333vw, -0.25rem);
+  --spacing-footer-title-line-pull: clamp(0.5rem, 1.041667vw, 1.25rem);
+  --spacing-footer-title-line-pull-left: clamp(1rem, 1.875vw, 2.25rem);
+  --size-footer-legal-rule-w: min(100%, var(--size-property-container-max));
+  --text-footer-title: clamp(2.25rem, 5vw, 6rem);
+  --text-footer-title--line-height: 1;
+  --text-footer-title--letter-spacing: 0;
+  --text-footer-title--font-weight: 400;
+  --text-footer-nav: clamp(0.875rem, 1.041667vw, 1.25rem);
+  --text-footer-nav--line-height: 1;
+  --text-footer-nav--letter-spacing: 0;
+  --text-footer-nav--font-weight: 500;
+  --opacity-footer-nav-top: 1;
+  --opacity-footer-nav-bottom: 0.08;
+  --text-footer-legal: clamp(0.875rem, 1.041667vw, 1.25rem);
+  --text-footer-legal--line-height: 1.175;
+  --text-footer-legal--letter-spacing: 0;
+  --text-footer-legal--font-weight: 200;
+  --text-footer-credit-display: clamp(1rem, 1.25vw, 1.5rem);
+  --text-footer-credit-display--line-height: 1;
+  --text-footer-credit-display--letter-spacing: 0;
+  --text-footer-credit-display--font-weight: 400;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+
+    /* Hero overlay + divider (Figma Rectangle 1, Line 30) */
+    --ue-gradient-hero-overlay: linear-gradient(
+      0deg,
+      #000000 4%,
+      rgb(102 102 102 / 0) 50%
+    );
+
+    --ue-hero-divider-height: 2px;
+    --ue-hero-divider-gradient: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0) 0%,
+      rgb(255 255 255 / 1) 50.5%,
+      rgb(255 255 255 / 0) 100%
+    );
+    --ue-divider-accent: var(--ue-hero-divider-height) solid transparent;
+
+    /* Figma Horizontal Divider (карточки) */
+    --ue-feature-divider-height: 2px;
+    --ue-feature-divider-gradient: linear-gradient(
+      90deg,
+      rgb(245 245 245 / 0) 0%,
+      rgb(245 245 245 / 1) 49.5%,
+      rgb(143 143 143 / 0) 100%
+    );
+
+    /* Текстовый оффер 4 — Line 13 / 14 (2060:11070–11071), stroke 1px */
+    --ue-offer-4-line-height: 1px;
+    --ue-offer-4-line-gradient-left: linear-gradient(
+      90deg,
+      rgb(153 153 153 / 0) 0%,
+      rgb(255 255 255 / 1) 100%
+    );
+    --ue-offer-4-line-gradient-right: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 1) 0%,
+      rgb(153 153 153 / 0) 100%
+    );
+
+    /* Текстовый оффер 5 — Rectangle 17 (2112:81) */
+    --ue-offer-5-transition-gradient: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 1) 59.13%,
+      rgb(0 0 0 / 0) 100%
+    );
+
+    /* Оффер локаций — Line 1 (2060:10888) */
+    --ue-offer-alternates-divider-height: 2px;
+    --ue-offer-alternates-divider-gradient: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0) 0%,
+      rgb(255 255 255 / 1) 50%,
+      rgb(153 153 153 / 0) 100%
+    );
+
+    /* Описание 2 — cards 2, inner shadow (Figma Rectangle 10) */
+    --ue-desc2-collage-shadow: inset 0 4px 25px 27px rgb(0 0 0 / 0.7);
+
+    /* Описание владельца — разделитель под заголовком */
+    --ue-owner-divider-height: 1px;
+    --ue-owner-divider-gradient: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0) 0%,
+      rgb(255 255 255 / 0.85) 50%,
+      rgb(153 153 153 / 0) 100%
+    );
+
+    /* Property card — Line 2 (2060:10895) */
+    --ue-property-divider-height: 1px;
+    --ue-property-divider-gradient: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 1) 0%,
+      rgb(153 153 153 / 0) 100%
+    );
+
+    /* Фон карточки: property-main-2 + оверлеи (Figma card-bg-decor, crop ~44% по Y) */
+    --ue-property-bg-position: center 42%;
+    --ue-property-bg-overlay-opacity: 1;
+    --ue-property-bg-dim: rgb(0 0 0 / 0.5);
+    --size-property-section-decor-h: clamp(4rem, 6.25vw, 7.5rem);
+    --ue-property-bg-gradient: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 1) 0%,
+      rgb(102 102 102 / 0) 100%
+    );
+    --ue-property-bg-gradient-side: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0) 35%,
+      rgb(0 0 0 / 0.55) 72%,
+      rgb(0 0 0 / 0.72) 100%
+    );
+    --ue-property-bg-gradient-edge: radial-gradient(
+      ellipse 95% 90% at 50% 46%,
+      rgb(255 255 255 / 0.16) 0%,
+      rgb(255 255 255 / 0.07) 36%,
+      rgb(0 0 0 / 0) 58%,
+      rgb(0 0 0 / 0.03) 80%,
+      rgb(0 0 0 / 0.08) 100%
+    );
+
+    /* Photo Gallery — маска Slides Box (Figma Carousel Mask) */
+    --ue-gallery-edge-mask: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0) 0%,
+      rgb(0 0 0 / 0.45) 11.7%,
+      rgb(0 0 0 / 1) 22.6%,
+      rgb(0 0 0 / 1) 78.7%,
+      rgb(0 0 0 / 0.45) 88.3%,
+      rgb(0 0 0 / 0) 100%
+    );
+
+    /* Футер — Line 27–29 (2060:19819–21558) */
+    --ue-footer-title-line-left: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0) 0%,
+      rgb(255 255 255 / 1) 100%
+    );
+    --ue-footer-title-line-right: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 1) 0%,
+      rgb(0 0 0 / 0) 100%
+    );
+    --ue-footer-legal-divider-height: 1.5px;
+    --ue-footer-legal-divider-gradient: linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0) 0%,
+      rgb(255 255 255 / 1) 50.5%,
+      rgb(153 153 153 / 0) 100%
+    );
+    --ue-footer-title-rule-height: 2px;
+
+    /* Motion */
+    --ue-motion-reveal-y: clamp(1rem, 2vw, 1.75rem);
+    --ue-motion-duration-reveal: 0.9s;
+    --ue-motion-duration-hover: 0.35s;
+    --ue-motion-duration-hover-slow: 0.55s;
+    --ue-motion-duration-crossfade: 0.55s;
+    --ue-motion-duration-gallery-fade: 0.5s;
+    --ue-motion-duration-carousel: 0.55s;
+    --ue-motion-carousel-shift: 3%;
+    --ue-motion-gallery-autoplay-ms: 6000;
+    --ue-motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ue-motion-ease-carousel: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html {
+    @apply antialiased;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply m-0 min-h-svh overflow-x-clip bg-surface-black text-text-primary;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+  }
+
+  h1 {
+    font-family: var(--font-editorial);
+    font-size: var(--text-heading-1);
+    line-height: var(--text-heading-1--line-height);
+    letter-spacing: var(--text-heading-1--letter-spacing);
+    font-weight: var(--text-heading-1--font-weight);
+  }
+
+  h2 {
+    font-family: var(--font-quote);
+    font-size: var(--text-heading-2);
+    line-height: var(--text-heading-2--line-height);
+    letter-spacing: var(--text-heading-2--letter-spacing);
+    font-weight: var(--text-heading-2--font-weight);
+    font-style: italic;
+  }
+
+  h3 {
+    font-family: var(--font-section);
+    font-size: var(--text-heading-3);
+    line-height: var(--text-heading-3--line-height);
+    letter-spacing: var(--text-heading-3--letter-spacing);
+    font-weight: var(--text-heading-3--font-weight);
+  }
+
+  h4 {
+    font-family: var(--font-display);
+    font-size: var(--text-heading-4);
+    line-height: var(--text-heading-4--line-height);
+    letter-spacing: var(--text-heading-4--letter-spacing);
+    font-weight: var(--text-heading-4--font-weight);
+  }
+
+  h5 {
+    font-family: var(--font-body);
+    font-size: var(--text-heading-5);
+    line-height: var(--text-heading-5--line-height);
+    letter-spacing: var(--text-heading-5--letter-spacing);
+    font-weight: var(--text-heading-5--font-weight);
+  }
+
+  h6 {
+    font-family: var(--font-ui);
+    font-size: var(--text-heading-6);
+    line-height: var(--text-heading-6--line-height);
+    letter-spacing: var(--text-heading-6--letter-spacing);
+    font-weight: var(--text-heading-6--font-weight);
+  }
+
+  /* ——— Мобильная типографика и отступы (375px – 767px) ——— */
+  @media (max-width: 767px) {
+  :root {
+    --text-hero: clamp(2.125rem, 11.5vw, 2.75rem);
+    --text-hero-sub: clamp(0.9375rem, 4.8vw, 1.125rem);
+    --text-label: clamp(0.875rem, 4.5vw, 1rem);
+    --spacing-hero-footer-arrow: clamp(1.75rem, 7vw, 2.5rem);
+    --spacing-hero-footer-lang: clamp(1rem, 4vw, 1.5rem);
+    --spacing-hero-lang-inline: clamp(0.5rem, 3vw, 1rem);
+
+    --text-offer: clamp(1.25rem, 6.2vw, 1.5rem);
+    --spacing-offer-y: clamp(1.25rem, 5vw, 1.75rem);
+    --spacing-offer-min-h: 0px;
+
+    --text-offer-cuprum: clamp(1.5rem, 6.8vw, 1.875rem);
+    --spacing-offer-cuprum-y: clamp(1.25rem, 5vw, 1.75rem);
+    --spacing-offer-cuprum-x: clamp(1rem, 4vw, 1.25rem);
+
+    --text-offer-jura: clamp(1.25rem, 5.2vw, 1.625rem);
+    --spacing-offer-jura-y: clamp(1.25rem, 4vw, 1.75rem);
+    --spacing-offer-jura-min-h: 0px;
+
+    --text-offer-alternates: clamp(1.375rem, 5.8vw, 2rem);
+    --spacing-offer-alternates-spacer-top: clamp(1.25rem, 5vw, 2rem);
+    --spacing-offer-alternates-spacer-bottom: clamp(1.25rem, 4vw, 1.75rem);
+    --spacing-offer-alternates-x: clamp(1rem, 4vw, 1.5rem);
+
+    --text-offer-4-title: clamp(1.125rem, 4.9vw, 1.75rem);
+    --text-offer-4-sub: clamp(0.9375rem, 4.2vw, 1.125rem);
+    --spacing-offer-4-text-block-min-h: 0px;
+    --spacing-offer-4-title-pt: clamp(1.25rem, 5vw, 2rem);
+    --spacing-offer-4-sub-inset-x: var(--spacing-gutter);
+    --size-offer-4-line-min-w: 0px;
+
+    --text-offer-5: clamp(1rem, 4.5vw, 1.25rem);
+
+    --spacing-feature-text-pl-reversed: var(--spacing-feature-text-pl);
+    --spacing-feature-text-pt: clamp(1.125rem, 4vw, 1.5rem);
+    --size-feature-media-h: auto;
+
+    --size-video-media-h: clamp(10.5rem, 56vw, 14rem);
+    --size-video2-media-h: clamp(10rem, 52vw, 13rem);
+    --size-video-play: clamp(3.75rem, 20vw, 5rem);
+
+    --size-property-main-h: clamp(11.5rem, 58vw, 16rem);
+    --size-property-thumb-h: clamp(3.25rem, 21vw, 4rem);
+    --size-property-thumb-w: clamp(3.25rem, 21vw, 4.5rem);
+
+    --text-gallery-label: clamp(1.75rem, 9vw, 2.5rem);
+    --size-gallery-label-stroke: 2px;
+    --size-gallery-card-h: clamp(13rem, 62vw, 17rem);
+    --gap-gallery-top-row: var(--spacing-feature-stack-gap);
+    --size-gallery-slide-active-w: min(82vw, 20rem);
+    --size-gallery-slide-active-h: clamp(9.5rem, 48vw, 13rem);
+    --size-gallery-slide-adjacent-w: min(70vw, 16rem);
+    --size-gallery-slide-adjacent-h: clamp(7.5rem, 40vw, 11rem);
+    --spacing-gallery-carousel-px: 0.5rem;
+
+    --text-banner-title: clamp(1.125rem, 5vw, 1.5rem);
+    --text-banner-title--line-height: 1.35;
+    --text-banner-message: clamp(1.0625rem, 4.8vw, 1.375rem);
+    --size-banner-card-min-h: clamp(13.5rem, 72vw, 17rem);
+    --text-banner-button: clamp(1rem, 4.5vw, 1.25rem);
+    --spacing-banner-button-px: clamp(1.5rem, 6vw, 2rem);
+
+    --text-details-button: clamp(1.0625rem, 5vw, 1.25rem);
+    --spacing-details-button-px: clamp(1.125rem, 5vw, 1.5rem);
+    --size-details-section-min-h: 0px;
+
+    --size-about-title-line-w: clamp(2rem, 14vw, 3.5rem);
+    --text-about-title: clamp(1.125rem, 5vw, 1.375rem);
+    --text-about-body: clamp(0.9375rem, 4.2vw, 1.0625rem);
+    --spacing-about-title-line-pull-left: 4px;
+
+    --size-owner-section-min-h: 0px;
+    --text-owner-title: clamp(1rem, 4.5vw, 1.125rem);
+    --text-owner-body: clamp(0.9375rem, 4.2vw, 1rem);
+
+    --text-desc2-title: clamp(1.125rem, 5vw, 1.375rem);
+    --text-desc2-body: clamp(0.875rem, 3.9vw, 1rem);
+    --size-desc2-transition-h: clamp(2rem, 8vw, 3rem);
+
+    --text-footer-title: clamp(1.625rem, 7.5vw, 2.25rem);
+    --size-footer-main-min-h: 0px;
+    --size-footer-title-rule-w: 0px;
+    --spacing-footer-nav-to-legal: clamp(1.5rem, 8vw, 2.5rem);
+    --spacing-footer-nav-gap: clamp(0.875rem, 4vw, 1.25rem);
+
+    --ue-gallery-edge-mask: linear-gradient(
+      90deg,
+      rgb(0 0 0 / 0) 0%,
+      rgb(0 0 0 / 0.35) 8%,
+      rgb(0 0 0 / 1) 16%,
+      rgb(0 0 0 / 1) 84%,
+      rgb(0 0 0 / 0.35) 92%,
+      rgb(0 0 0 / 0) 100%
+    );
+    --ue-hero-parallax-layer-scale: 1.05;
+  }
+  }
+}
+
+@layer components {
+  .property-card__stage {
+    container-type: inline-size;
+    container-name: property-card;
+    width: 100%;
+    max-width: var(--size-property-container-max);
+    margin-inline: auto;
+  }
+
+  .property-card__bleed {
+    position: relative;
+  }
+
+  /* ——— Motion (Lenis + scroll reveal + hover) ——— */
+  .ue-reveal {
+    opacity: 0;
+    transform: translate3d(0, var(--ue-motion-reveal-y), 0);
+    transition:
+      opacity var(--ue-motion-duration-reveal) var(--ue-motion-ease-out),
+      transform var(--ue-motion-duration-reveal) var(--ue-motion-ease-out);
+  }
+
+  .ue-reveal.ue-reveal--active {
+    will-change: transform, opacity;
+  }
+
+  .ue-reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .ue-reveal--delay-1 {
+    transition-delay: 80ms;
+  }
+
+  .ue-reveal--delay-2 {
+    transition-delay: 160ms;
+  }
+
+  .ue-reveal--delay-3 {
+    transition-delay: 240ms;
+  }
+
+  .ue-reveal--delay-4 {
+    transition-delay: 320ms;
+  }
+
+  .ue-hero-parallax-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate3d(0, var(--ue-hero-parallax-y, 0px), 0)
+      scale(var(--ue-hero-parallax-layer-scale, 1.08));
+    will-change: transform;
+  }
+
+  .about-title-row .about-title-rule {
+    display: none;
+  }
+
+  @media (min-width: 480px) {
+    .about-title-row .about-title-rule {
+      display: block;
+    }
+  }
+
+  .offer-fade-line {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .offer-fade-line {
+      display: block;
+    }
+  }
+
+  .ue-hover-btn {
+    transition:
+      opacity var(--ue-motion-duration-hover) var(--ue-motion-ease-out),
+      transform var(--ue-motion-duration-hover) var(--ue-motion-ease-out),
+      box-shadow var(--ue-motion-duration-hover) var(--ue-motion-ease-out),
+      background-color var(--ue-motion-duration-hover) var(--ue-motion-ease-out);
+  }
+
+  @media (hover: hover) {
+    .ue-hover-btn:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+
+    .ue-hover-btn:active {
+      transform: translateY(0);
+    }
+  }
+
+  .ue-crossfade__layer {
+    position: absolute;
+    inset: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity var(--ue-motion-duration-crossfade) var(--ue-motion-ease-out);
+  }
+
+  .ue-hover-card-media {
+    overflow: hidden;
+  }
+
+  .ue-hover-card-media .ue-crossfade__layer,
+  .ue-hover-card-media .ue-gallery-fade__img {
+    transition:
+      opacity var(--ue-motion-duration-gallery-fade) var(--ue-motion-ease-carousel),
+      transform var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out);
+  }
+
+  .ue-hover-card-media img:not(.ue-gallery-fade__img),
+  .ue-hover-card-media .ue-hover-card-media__img:not(.ue-gallery-fade__img) {
+    transition: transform var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out);
+  }
+
+  @media (hover: hover) {
+    .ue-hover-card-media:hover img,
+    .ue-hover-card-media:hover .ue-hover-card-media__img,
+    .ue-hover-card-media:hover .ue-crossfade__layer,
+    .ue-hover-card-media:hover .ue-gallery-fade__img {
+      transform: scale(1.04);
+    }
+  }
+
+  .ue-crossfade--soft .ue-crossfade__layer {
+    transition:
+      opacity var(--ue-motion-duration-gallery-fade) var(--ue-motion-ease-carousel),
+      transform var(--ue-motion-duration-gallery-fade) var(--ue-motion-ease-carousel);
+  }
+
+  .ue-gallery-fade__img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    transition: opacity var(--ue-motion-duration-gallery-fade) var(--ue-motion-ease-carousel);
+  }
+
+  .ue-gallery-fade__img[data-phase='in'],
+  .ue-gallery-fade__img[data-phase='out'] {
+    will-change: opacity;
+  }
+
+  .ue-gallery-fade__img[data-phase='waiting'] {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .ue-gallery-fade__img[data-phase='in'] {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .ue-gallery-fade__img[data-phase='hold'] {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .ue-gallery-fade__img[data-phase='out'] {
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .ue-carousel-track {
+    transition: transform var(--ue-motion-duration-carousel) var(--ue-motion-ease-carousel);
+  }
+
+  .ue-carousel-track.is-dragging {
+    transition: none;
+    will-change: transform;
+  }
+
+  .ue-carousel-slide {
+    transition:
+      width var(--ue-motion-duration-carousel) var(--ue-motion-ease-carousel),
+      height var(--ue-motion-duration-carousel) var(--ue-motion-ease-carousel),
+      opacity var(--ue-motion-duration-carousel) var(--ue-motion-ease-carousel),
+      transform var(--ue-motion-duration-carousel) var(--ue-motion-ease-carousel);
+  }
+
+  .ue-carousel-slide--side {
+    opacity: 0.88;
+  }
+
+  .ue-carousel-slide--center {
+    opacity: 1;
+  }
+
+  .ue-gallery-thumb {
+    transition:
+      opacity var(--ue-motion-duration-hover) var(--ue-motion-ease-out),
+      outline-color var(--ue-motion-duration-hover) var(--ue-motion-ease-out),
+      transform var(--ue-motion-duration-hover) var(--ue-motion-ease-out);
+  }
+
+  @media (hover: hover) {
+    .ue-gallery-thumb:not([aria-current='true']):hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .ue-video-modal__backdrop {
+    background-color: var(--color-video-modal-backdrop);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  @media (hover: hover) {
+    .ue-back-to-hero:hover {
+      transform: scale(1.06);
+    }
+
+    .ue-back-to-hero:active {
+      transform: scale(0.98);
+    }
+  }
+
+  @media (hover: hover) {
+    .ue-video-modal__close:hover {
+      transform: scale(1.05);
+    }
+
+    .ue-video-modal__close:active {
+      transform: scale(0.98);
+    }
+  }
+
+  /* Promo video — hover на постере и Play */
+  .ue-promo-video__poster {
+    transform: scale(1);
+    transition: transform var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out);
+  }
+
+  .ue-promo-video__overlay {
+    transition:
+      background-color var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out),
+      backdrop-filter var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out),
+      -webkit-backdrop-filter var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out);
+  }
+
+  .ue-promo-video__overlay--promo2 {
+    background-color: rgb(0 0 0 / 0);
+  }
+
+  .ue-promo-video__play {
+    opacity: 0.92;
+    transform: scale(1);
+    transition:
+      transform var(--ue-motion-duration-hover-slow) var(--ue-motion-ease-out),
+      opacity var(--ue-motion-duration-hover) var(--ue-motion-ease-out);
+  }
+
+  @media (hover: hover) {
+    .ue-promo-video:hover .ue-promo-video__poster,
+    .ue-promo-video:focus-within .ue-promo-video__poster {
+      will-change: transform;
+      transform: scale(1.045);
+    }
+
+    .ue-promo-video:hover .ue-promo-video__overlay:not(.ue-promo-video__overlay--promo2),
+    .ue-promo-video:focus-within .ue-promo-video__overlay:not(.ue-promo-video__overlay--promo2) {
+      background-color: rgb(0 0 0 / 0.02);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+    }
+
+    .ue-promo-video:hover .ue-promo-video__overlay--promo2,
+    .ue-promo-video:focus-within .ue-promo-video__overlay--promo2 {
+      background-color: rgb(0 0 0 / 0.18);
+    }
+
+    .ue-promo-video:hover .ue-promo-video__play,
+    .ue-promo-video:focus-within .ue-promo-video__play {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+
+    .ue-promo-video__play:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .ue-promo-video__play:active {
+      transform: scale(1.04);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ue-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .ue-hero-parallax-layer {
+      transform: scale(1.08);
+    }
+
+    .ue-hover-btn,
+    .ue-hover-card-media img,
+    .ue-hover-card-media .ue-hover-card-media__img {
+      transition: none;
+    }
+
+    .ue-hover-btn:hover {
+      transform: none;
+    }
+
+    .ue-hover-card-media:hover img,
+    .ue-hover-card-media:hover .ue-hover-card-media__img,
+    .ue-hover-card-media:hover .ue-crossfade__layer,
+    .ue-hover-card-media:hover .ue-gallery-fade__img {
+      transform: none;
+    }
+
+    .ue-crossfade__layer,
+    .ue-gallery-fade__img,
+    .ue-carousel-slide,
+    .ue-carousel-track,
+    .ue-gallery-thumb {
+      transition: none;
+    }
+
+    .ue-carousel-track {
+      transform: none !important;
+    }
+
+    .ue-promo-video__poster,
+    .ue-promo-video__overlay,
+    .ue-promo-video__play {
+      transition: none;
+    }
+
+    .ue-promo-video:hover .ue-promo-video__poster,
+    .ue-promo-video:focus-within .ue-promo-video__poster,
+    .ue-promo-video:hover .ue-promo-video__play,
+    .ue-promo-video:focus-within .ue-promo-video__play,
+    .ue-promo-video__play:hover {
+      transform: none;
+    }
+  }
+}
